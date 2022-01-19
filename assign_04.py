@@ -34,7 +34,12 @@ def begin():
     if begin_program == "y":
         main()
     elif begin_program == "n":
-        print("Goodbye!")
+        print()
+        goodbye = "Goodbye!"
+        for letter in goodbye:
+            time.sleep(0.06)  # In seconds
+            stdout.write(letter)
+            stdout.flush()
     else:
         print()
         print("I don't understand that. I'll just assume you meant yes?")
